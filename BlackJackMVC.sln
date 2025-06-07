@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackMVC", "BlackJackMVC\BlackJackMVC.csproj", "{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
