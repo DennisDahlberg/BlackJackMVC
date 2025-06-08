@@ -1,31 +1,78 @@
-html {
-  font-size: 14px;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+* {
+    margin: 0;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
 }
 
 body {
-  margin-bottom: 60px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-image: url("/img/blackjack_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+input, button, textarea, select {
+    font: inherit;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/*Properties*/
+:root {
+    --color-background-navbar: black;
+    --color-text-navbar: white;
+    --font-size-text: 16px;
+}
+
+/*Navbar*/
+nav {
+    display: flex;
+    justify-content: center;
+}
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color-background-navbar);
+    color: var(--color-text-navbar);
+    margin: 0.4em;
+    border-radius: 10px;
+    gap: .5em;
+}
+.navbar-container a {
+    background-color: green;
+    padding: 0.5em;
+}
+
