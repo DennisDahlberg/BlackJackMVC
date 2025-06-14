@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --color-background-navbar: black;
     --color-text-navbar: white;
+    --color-text: white;
     --font-size-text: 16px;
 }
 
@@ -74,5 +75,15 @@ nav {
 .navbar-container a {
     background-color: green;
     padding: 0.5em;
+}
+
+.text {
+    color: var(--color-text);
+    font-size: var(--font-size-text);
+}
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-text);
 }
 
