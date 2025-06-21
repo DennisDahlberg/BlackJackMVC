@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackMVC", "BlackJackMVC\BlackJackMVC.csproj", "{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{AA903217-AC1E-49C8-814E-BD804F2F2163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{B248192E-ED53-4536-8538-D96B8BBFB8A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D850BCE-A8DC-44CB-8B04-43DD94C8E1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA903217-AC1E-49C8-814E-BD804F2F2163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA903217-AC1E-49C8-814E-BD804F2F2163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA903217-AC1E-49C8-814E-BD804F2F2163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA903217-AC1E-49C8-814E-BD804F2F2163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B248192E-ED53-4536-8538-D96B8BBFB8A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B248192E-ED53-4536-8538-D96B8BBFB8A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B248192E-ED53-4536-8538-D96B8BBFB8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B248192E-ED53-4536-8538-D96B8BBFB8A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

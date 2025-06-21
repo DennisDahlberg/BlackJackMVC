@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using BlackJackMVC.Data;
+using DataAccessLayer.Data;
 
 namespace BlackJackMVC;
 
