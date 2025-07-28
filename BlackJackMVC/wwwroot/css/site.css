@@ -53,7 +53,8 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --color-background-navbar: black;
     --color-text-navbar: white;
-    --color-text: white;
+    --color-text-light: white;
+    --color-text-dark: black;
     --font-size-text: 16px;
 }
 
@@ -134,13 +135,13 @@ h1, h2, h3, h4, h5, h6 {
 /*Navbar End*/
 
 .text {
-    color: var(--color-text);
+    color: var(--color-text-light);
     font-size: var(--font-size-text);
 }
 .heading {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--color-text);
+    color: var(--color-text-light);
 }
 
 /*Home Page*/
@@ -153,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    color: var(--color-text-dark);
 }
 .home-page-card:hover {
     cursor: pointer;
@@ -184,6 +186,7 @@ h1, h2, h3, h4, h5, h6 {
     filter: blur(4px);
     transition: filter 0.3s;
 }
+
 
 /*Home Page End*/
 

@@ -9,7 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -128,7 +129,7 @@
       <workItem from="1750496933312" duration="3589000" />
       <workItem from="1750530193953" duration="4617000" />
       <workItem from="1750580756644" duration="1204000" />
-      <workItem from="1753698958286" duration="3071000" />
+      <workItem from="1753698958286" duration="4132000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -234,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753703950426</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added a simple return button to the rules section">
+      <option name="closed" value="true" />
+      <created>1753704455670</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1753704455670</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +266,8 @@
     <MESSAGE value="Fixed and added a application user with added custom properties like balance and games" />
     <MESSAGE value="Removed footer" />
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a rules section to the home controller with a view with basic styling" />
+    <MESSAGE value="Added a simple return button to the rules section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a simple return button to the rules section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
