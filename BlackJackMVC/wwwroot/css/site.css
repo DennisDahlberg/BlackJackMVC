@@ -184,4 +184,12 @@ h1, h2, h3, h4, h5, h6 {
     filter: blur(4px);
     transition: filter 0.3s;
 }
+
+.rules-container {
+    background-color: black;
+    width: 60%;
+    padding: 2em;
+    border-radius: 10px;
+}
+
 /*Home Page End*/

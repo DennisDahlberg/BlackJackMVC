@@ -1,0 +1,72 @@
+@{
+    ViewData["Title"] = "Rules";
+}
+
+<div class="container mt-5 text rules-container">
+    <h1 class="mb-4 heading">♠️ Blackjack Rules</h1>
+
+    <section class="mb-4">
+        <h3>🎯 Objective</h3>
+        <p>The goal of Blackjack is to beat the dealer by having a hand value closer to <strong>21</strong> without going over.</p>
+    </section>
+
+    <section class="mb-4">
+        <h3>🃏 Card Values</h3>
+        <ul>
+            <li>Number cards (2–10): <strong>Face value</strong></li>
+            <li>Face cards (J, Q, K): <strong>10 points</strong></li>
+            <li>Aces (A): <strong>1 or 11 points</strong>, whichever is more favorable for your hand</li>
+        </ul>
+    </section>
+
+    <section class="mb-4">
+        <h3>🧑‍🤝‍🧑 Gameplay</h3>
+        <ol>
+            <li>Each player is dealt two cards, face up.</li>
+            <li>The dealer receives one face-up card and one face-down card (the “hole” card).</li>
+            <li>On your turn, you can:
+                <ul>
+                    <li><strong>Hit</strong> – Take another card.</li>
+                    <li><strong>Stand</strong> – End your turn and keep your current hand.</li>
+                </ul>
+            </li>
+            <li>If your hand value exceeds 21, you <strong>bust</strong> and lose the round.</li>
+            <li>The dealer reveals their hidden card and plays their hand:
+                <ul>
+                    <li>Dealer <strong>must hit</strong> until their total is <strong>17 or higher</strong>.</li>
+                    <li>Dealer stands on 17 or higher.</li>
+                </ul>
+            </li>
+        </ol>
+    </section>
+
+    <section class="mb-4">
+        <h3>🏆 Winning</h3>
+        <ul>
+            <li>If your total is higher than the dealer's without busting → <strong>You win</strong>.</li>
+            <li>If the dealer busts and you don’t → <strong>You win</strong>.</li>
+            <li>If your total equals the dealer's → <strong>Push</strong> (tie).</li>
+            <li>If your total is lower than the dealer's → <strong>You lose</strong>.</li>
+        </ul>
+    </section>
+
+    <section class="mb-4">
+        <h3>🎉 Blackjack!</h3>
+        <p>If you get an <strong>Ace and a 10-value card</strong> (10, J, Q, K) on your first two cards:</p>
+        <ul>
+            <li>That’s a <strong>Blackjack</strong>.</li>
+            <li>It usually <strong>pays 3:2</strong> (depending on game rules).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>📝 Notes</h3>
+        <ul>
+            <li>This simplified version does not include splitting, doubling down, or insurance.</li>
+            <li>You are playing <strong>against the dealer only</strong>, not other players.</li>
+        </ul>
+    </section>
+</div>
+
+
+
