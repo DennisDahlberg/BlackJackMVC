@@ -185,11 +185,21 @@ h1, h2, h3, h4, h5, h6 {
     transition: filter 0.3s;
 }
 
+/*Home Page End*/
+
+
+
+/*Rules Page Start*/
 .rules-container {
     background-color: black;
     width: 60%;
     padding: 2em;
     border-radius: 10px;
+    position: relative;
 }
-
-/*Home Page End*/
+.rules-close-button {
+    position: absolute;
+    right: 3em;
+    top: 3em;
+}
+/*Rules Page End*/

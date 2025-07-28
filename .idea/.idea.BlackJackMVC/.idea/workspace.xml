@@ -9,11 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/img/blackjack_table.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +128,7 @@
       <workItem from="1750496933312" duration="3589000" />
       <workItem from="1750530193953" duration="4617000" />
       <workItem from="1750580756644" duration="1204000" />
-      <workItem from="1753698958286" duration="2729000" />
+      <workItem from="1753698958286" duration="3071000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -229,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753699136939</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added a rules section to the home controller with a view with basic styling">
+      <option name="closed" value="true" />
+      <created>1753703950426</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1753703950426</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +256,8 @@
     <MESSAGE value="Started working on game model" />
     <MESSAGE value="Fixed and added a application user with added custom properties like balance and games" />
     <MESSAGE value="Removed footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed footer" />
+    <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a rules section to the home controller with a view with basic styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
