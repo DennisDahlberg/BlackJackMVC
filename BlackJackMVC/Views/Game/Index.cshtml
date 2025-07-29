@@ -28,5 +28,15 @@
                 value="100">
             +100
         </button>
+        <button type="submit"
+                asp-action="StartGame"
+                class="btn btn-success">
+            Start
+        </button>
     </form>
 </div>
+
+@if (TempData["Result"] != null)
+{
+    <p class="text-danger text-center fs-5">@TempData["Result"]</p>
+}
