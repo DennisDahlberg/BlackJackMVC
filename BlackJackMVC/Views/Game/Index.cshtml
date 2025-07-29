@@ -1,7 +1,16 @@
+@model Services.ViewModels.BetViewModel
 @{
-    ViewData["Title"] = "Play a game";
+    ViewData["Title"] = "Setup";
 }
 
-<div class="game-board">
-    
+<div class="game-board"></div>
+
+<div class="setup-container">
+    <h2 class="heading">Setup</h2>
+    <p>Wager: @Model.BetAmount</p>
+    <div>
+        <a class="btn btn-primary">+10</a>
+        <a class="btn btn-primary">+50</a>
+        <a class="btn btn-primary">+100</a>
+    </div>
 </div>

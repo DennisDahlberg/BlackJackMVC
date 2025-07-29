@@ -237,9 +237,35 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Play game start*/
 .game-board {
-    background-image: url("/img/blackjack_game_bg.png");
-    height: 100%;
+    background-image: url("/img/game_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* Important! Make it stretch fully */
+    height: 100vh;
     width: 100%;
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.setup-container {
+    text-align: center;
+    background-color: rgba(0, 255, 0, 0.2);
+    width: 80%;
+    margin: 2em auto;
+    border-radius: 10px;
+    color: white;
+    padding: 2em 0;
+}
+.setup-container p {
+    font-size: 3rem;
+}
+.setup-container h2 {
+    font-size: 4rem;
 }
 /*Play game end*/
 
