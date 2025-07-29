@@ -2,43 +2,52 @@
     ViewData["Title"] = "Home Page";
 }
 
+@* <img src="img/blackjack_bg.jpg" class="main-background" alt=""/> *@
 
-<h1 class="heading text-center">Welcome</h1>
-<div class="home-page-grid">
-    <a asp-controller="Game" asp-action="Index" class="home-page-btn">
-        <div class="home-page-card">
-            <img src="/img/placeholder.jpg" alt="">
-            <h3 class="home-page-card-title">Play game</h3>
-            <p class="home-page-card-details">
-                Play a game of blackjack
-            </p>
-        </div>    
-    </a>
-    
+<div class="main-background">
+    <div class="home-page">
+        <h1 class="heading text-center">Welcome</h1>
+        <div class="home-page-grid">
+            <a asp-controller="Game" asp-action="Index" class="home-page-btn">
+                <div class="home-page-card">
+                    <img src="/img/placeholder.jpg" alt="">
+                    <h3 class="home-page-card-title">Play game</h3>
+                    <p class="home-page-card-details">
+                        Play a game of blackjack
+                    </p>
+                </div>
+            </a>
 
-    <a asp-action="Rules" class="home-page-btn">
-        <div class="home-page-card">
-            <img src="/img/placeholder.jpg" alt="">
-            <h3 class="home-page-card-title">Rules</h3>
-            <p class="home-page-card-details">
-                View the rules to quickly get started with blackjack!
-            </p>
+
+            <a asp-action="Rules" class="home-page-btn">
+                <div class="home-page-card">
+                    <img src="/img/placeholder.jpg" alt="">
+                    <h3 class="home-page-card-title">Rules</h3>
+                    <p class="home-page-card-details">
+                        View the rules to quickly get started with blackjack!
+                    </p>
+                </div>
+            </a>
+
+            <div class="home-page-card">
+                <img src="/img/placeholder.jpg" alt="">
+                <h3 class="home-page-card-title">Placeholder</h3>
+                <p class="home-page-card-details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velit mauris, vestibulum vitae ornare eu, pulvinar quis augue. Curabitur porta, arcu in mollis auctor, sem turpis mollis libero
+                </p>
+            </div>
+            <div class="home-page-card">
+                <img src="/img/placeholder.jpg" alt="">
+                <h3 class="home-page-card-title">Placeholder</h3>
+                <p class="home-page-card-details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velit mauris, vestibulum vitae ornare eu, pulvinar quis augue. Curabitur porta, arcu in mollis auctor, sem turpis mollis libero
+                </p>
+            </div>
         </div>
-    </a>
-
-    <div class="home-page-card">
-        <img src="/img/placeholder.jpg" alt="">
-        <h3 class="home-page-card-title">Placeholder</h3>
-        <p class="home-page-card-details">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velit mauris, vestibulum vitae ornare eu, pulvinar quis augue. Curabitur porta, arcu in mollis auctor, sem turpis mollis libero
-        </p>
     </div>
-    <div class="home-page-card">
-        <img src="/img/placeholder.jpg" alt="">
-        <h3 class="home-page-card-title">Placeholder</h3>
-        <p class="home-page-card-details">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras velit mauris, vestibulum vitae ornare eu, pulvinar quis augue. Curabitur porta, arcu in mollis auctor, sem turpis mollis libero
-        </p>
-    </div>
+    
 </div>
+
+
+
     

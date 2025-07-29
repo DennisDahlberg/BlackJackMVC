@@ -9,10 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Rules.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +132,7 @@
       <workItem from="1750530193953" duration="4617000" />
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
-      <workItem from="1753780670011" duration="1087000" />
+      <workItem from="1753780670011" duration="6021000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -254,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753705433641</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Started working on play game functionality with a game controller as well as an index view that will eventually show the game board">
+      <option name="closed" value="true" />
+      <created>1753781970594</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753781970594</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +287,8 @@
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
     <MESSAGE value="Added a simple return button to the rules section" />
     <MESSAGE value="Merged into dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged into dev" />
+    <MESSAGE value="Started working on play game functionality with a game controller as well as an index view that will eventually show the game board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on play game functionality with a game controller as well as an index view that will eventually show the game board" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

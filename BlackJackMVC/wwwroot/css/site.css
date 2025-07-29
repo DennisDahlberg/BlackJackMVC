@@ -20,9 +20,28 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+
+.full-width-wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.main-background {
     background-image: url("/img/blackjack_bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #212328;
+
+    /* Important! Make it stretch fully */
+    min-height: 100vh;
+    width: 100vw;
+
+    position: relative;
+    padding: 3em 0;
 }
 
 img, picture, video, canvas, svg {
@@ -145,10 +164,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Home Page*/
+.home-page {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
 .home-page-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
+    margin-top: 2em;
 }
 .home-page-card {
     position: relative;
@@ -209,7 +236,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*Play game start*/
-    
+.game-board {
+    background-image: url("/img/blackjack_game_bg.png");
+    height: 100%;
+    width: 100%;
+}
 /*Play game end*/
 
 
