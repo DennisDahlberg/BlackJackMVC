@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using DataAccessLayer.Data;
 using DataAccessLayer.Models;
+using Services.Services;
 
 namespace BlackJackMVC;
 
@@ -22,6 +23,8 @@ public class Program
             .AddEntityFrameworkStores<ApplicationDbContext>();
         builder.Services.AddControllersWithViews();
 
+        builder.Services.AddTransient<SetupService>();
+        
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.

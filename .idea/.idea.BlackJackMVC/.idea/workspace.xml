@@ -9,10 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Services/Services/SetupService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <workItem from="1750530193953" duration="4617000" />
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
-      <workItem from="1753780670011" duration="12153000" />
+      <workItem from="1753780670011" duration="13160000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -280,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753799067220</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added buttons to increase the wager in the setup game section">
+      <option name="closed" value="true" />
+      <created>1753801493211</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1753801493211</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +315,8 @@
     <MESSAGE value="Started working on play game functionality with a game controller as well as an index view that will eventually show the game board" />
     <MESSAGE value="Fixed the background for the home and rules views" />
     <MESSAGE value="Started working on the wager function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started working on the wager function" />
+    <MESSAGE value="Added buttons to increase the wager in the setup game section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added buttons to increase the wager in the setup game section" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -327,13 +335,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>16</line>
+          <line>18</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Index'">
             <startOffsets>
-              <option value="364" />
+              <option value="418" />
             </startOffsets>
             <endOffsets>
-              <option value="390" />
+              <option value="444" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
