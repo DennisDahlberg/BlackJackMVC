@@ -5,14 +5,17 @@
 
 <h1 class="heading text-center">Welcome</h1>
 <div class="home-page-grid">
-    <div class="home-page-card">
-        <img src="/img/placeholder.jpg" alt="">
-        <h3 class="home-page-card-title">Play game</h3>
-        <p class="home-page-card-details">
-            Play a game of blackjack
-        </p>
-    </div>
+    <a asp-controller="Game" asp-action="Index" class="home-page-btn">
+        <div class="home-page-card">
+            <img src="/img/placeholder.jpg" alt="">
+            <h3 class="home-page-card-title">Play game</h3>
+            <p class="home-page-card-details">
+                Play a game of blackjack
+            </p>
+        </div>    
+    </a>
     
+
     <a asp-action="Rules" class="home-page-btn">
         <div class="home-page-card">
             <img src="/img/placeholder.jpg" alt="">
@@ -20,9 +23,9 @@
             <p class="home-page-card-details">
                 View the rules to quickly get started with blackjack!
             </p>
-        </div>    
+        </div>
     </a>
-    
+
     <div class="home-page-card">
         <img src="/img/placeholder.jpg" alt="">
         <h3 class="home-page-card-title">Placeholder</h3>
