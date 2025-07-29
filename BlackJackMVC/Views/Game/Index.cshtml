@@ -8,9 +8,25 @@
 <div class="setup-container">
     <h2 class="heading">Setup</h2>
     <p>Wager: @Model.BetAmount</p>
-    <div>
-        <a class="btn btn-primary">+10</a>
-        <a class="btn btn-primary">+50</a>
-        <a class="btn btn-primary">+100</a>
-    </div>
+    <form method="post">
+        <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
+        <button type="submit"
+                class="btn btn-primary"
+                name="betToAdd"
+                value="10">
+            +10
+        </button>
+        <button type="submit"
+                class="btn btn-primary"
+                name="betToAdd"
+                value="50">
+            +50
+        </button>
+        <button type="submit"
+                class="btn btn-primary"
+                name="betToAdd"
+                value="100">
+            +100
+        </button>
+    </form>
 </div>

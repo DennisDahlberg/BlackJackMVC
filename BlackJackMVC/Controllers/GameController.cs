@@ -10,4 +10,11 @@ public class GameController : Controller
         var bet = new BetViewModel() { BetAmount = 0 };
         return View(bet);
     }
+
+    [HttpPost]
+    public IActionResult Index(BetViewModel bet, decimal betToAdd)
+    {
+        bet.BetAmount += betToAdd;
+        return View(bet);
+    }
 }
