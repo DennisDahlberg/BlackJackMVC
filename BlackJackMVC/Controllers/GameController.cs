@@ -19,10 +19,12 @@ public class GameController : Controller
         _userManager = userManager;
     }
 
-    public IActionResult Index()
+    public async Task<IActionResult> Index()
     {
+        var user = await _userManager.GetUserAsync(User);
         ViewBag.BodyClass = "green-bg";
-        var bet = new BetViewModel() { BetAmount = 0 };
+        var bet = new BetViewModel() { BetAmount = 0, Balance = user.Balance };
+        
         return View(bet);
     }
 

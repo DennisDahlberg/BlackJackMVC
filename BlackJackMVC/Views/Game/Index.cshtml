@@ -7,7 +7,7 @@
 
 <div class="setup-container">
     <h2 class="setup-header">BLACKJACK</h2>
-    <p class="balance-text">Balance: $1000</p>
+    <p class="balance-text">Balance: $@Model.Balance</p>
     <p class="bet-text">PLACE YOUR BET</p>
     <div class="setup-secondary-container">
         <div class="start-game-btn wager">
@@ -16,6 +16,7 @@
         </div>
         <form method="post" class="setup-btn-container">
             <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
+            <input type="hidden" asp-for="Balance" value="@Model.Balance"/>
             <div>
                 <button type="submit" 
                         name="betToAdd"

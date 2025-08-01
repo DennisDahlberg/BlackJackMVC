@@ -10,8 +10,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Models/ApplicationUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Models/ApplicationUser.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ViewModels/BetViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ViewModels/BetViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +137,7 @@
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
       <workItem from="1753780670011" duration="15974000" />
-      <workItem from="1754060284735" duration="10351000" />
+      <workItem from="1754060284735" duration="11054000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -321,7 +323,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754070296146</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Improved setup view styling">
+      <option name="closed" value="true" />
+      <created>1754074565365</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1754074565365</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +364,8 @@
     <MESSAGE value="Started working on some simple validation for game setup" />
     <MESSAGE value="Added ViewBag into layout to handle individual styling of each view's body" />
     <MESSAGE value="Added chip images to set up view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added chip images to set up view" />
+    <MESSAGE value="Improved setup view styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved setup view styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -373,13 +384,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>31</line>
+          <line>33</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Index'">
             <startOffsets>
-              <option value="846" />
+              <option value="949" />
             </startOffsets>
             <endOffsets>
-              <option value="877" />
+              <option value="980" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
