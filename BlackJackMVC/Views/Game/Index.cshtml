@@ -6,33 +6,41 @@
 <div class="game-board"></div>
 
 <div class="setup-container">
-    <h2 class="heading">Setup</h2>
-    <p>Wager: @Model.BetAmount</p>
-    <form method="post">
+    <h2>BLACKJACK</h2>
+    <p>Balance: 1000</p>
+    <p>PLACE YOUR BET</p>
+    <p>Wager  £@Model.BetAmount</p>
+    <form method="post" class="setup-btn-container">
         <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
-        <button type="submit"
-                class="btn btn-primary"
-                name="betToAdd"
-                value="10">
-            +10
-        </button>
-        <button type="submit"
-                class="btn btn-primary"
-                name="betToAdd"
-                value="50">
-            +50
-        </button>
-        <button type="submit"
-                class="btn btn-primary"
-                name="betToAdd"
-                value="100">
-            +100
-        </button>
-        <button type="submit"
-                asp-action="StartGame"
-                class="btn btn-success">
-            Start
-        </button>
+        <div>
+            <button type="submit" 
+                    name="betToAdd"
+                    value="10"
+                    style="border: none; background: none;">
+                <img src="img/chip10.png" alt="submit"/>    
+            </button>
+            <button type="submit" 
+                    name="betToAdd"
+                    value="50"
+                    style="border: none; background: none;">
+                <img src="img/chip50.png" alt="submit"/>    
+            </button>
+            <button type="submit" 
+                    name="betToAdd"
+                    value="100"
+                    style="border: none; background: none;">
+                <img src="img/chip100.png" alt="submit"/>    
+            </button>
+        </div>
+        
+        <div>
+            <button type="submit"
+                    asp-action="StartGame"
+                    class="btn btn-success">
+                Start
+            </button>    
+        </div>
+        
     </form>
 </div>
 
