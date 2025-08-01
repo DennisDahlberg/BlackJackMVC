@@ -29,22 +29,6 @@ body {
     width: 100vw;
 }
 
-.main-background {
-    background-image: url("/img/blackjack_bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #212328;
-
-    /* Important! Make it stretch fully */
-    min-height: 100vh;
-    width: 100vw;
-
-    position: relative;
-    padding: 3em 0;
-}
-
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
@@ -73,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 :root {
     --color-background-navbar: black;
     --color-text-navbar: white;
-    --color-text-light: white;
-    --color-text-dark: black;
+    --color-text-light: #F2CA65;
+    --color-text-dark: #F2CA65;
     --font-size-text: 16px;
 }
 
@@ -227,11 +211,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 2em;
     border-radius: 10px;
     position: relative;
+    margin: 3em auto;
 }
 .rules-close-button {
     position: absolute;
     right: 3em;
     top: 3em;
+    color: white;
 }
 /*Rules Page End*/
 

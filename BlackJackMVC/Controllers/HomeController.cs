@@ -8,11 +8,13 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
+        ViewBag.BodyClass = "green-bg";
         return View();
     }
 
     public IActionResult Rules()
     {
+        ViewBag.BodyClass = "green-bg";
         return View();
     }
 
