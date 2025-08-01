@@ -21,6 +21,7 @@ public class GameController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.BodyClass = "green-bg";
         var bet = new BetViewModel() { BetAmount = 0 };
         return View(bet);
     }

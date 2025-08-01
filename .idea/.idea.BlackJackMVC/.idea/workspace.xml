@@ -10,9 +10,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,6 @@
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///home/dennis/Projects/BlackJackMVC/BlackJackMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -67,27 +66,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "adding__play__game__functionality",
-    "last_opened_file_path": "/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.BlackJackMVC: http.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;adding__play__game__functionality&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BlackJackMVC: http">
     <configuration name="BlackJackMVC: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlackJackMVC/BlackJackMVC.csproj" />
@@ -135,7 +134,8 @@
       <workItem from="1750530193953" duration="4617000" />
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
-      <workItem from="1753780670011" duration="14507000" />
+      <workItem from="1753780670011" duration="15974000" />
+      <workItem from="1754060284735" duration="1701000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -297,7 +297,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753802443558</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Started working on some simple validation for game setup">
+      <option name="closed" value="true" />
+      <created>1753803834951</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1753803834951</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +335,8 @@
     <MESSAGE value="Started working on the wager function" />
     <MESSAGE value="Added buttons to increase the wager in the setup game section" />
     <MESSAGE value="Added a simple method in the setup service that checks if a wager is valid" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a simple method in the setup service that checks if a wager is valid" />
+    <MESSAGE value="Started working on some simple validation for game setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on some simple validation for game setup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
