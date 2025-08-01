@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
@@ -46,6 +45,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/cdbc0e69be1f48bf9895cf8070bf0e68e26400/f7/c1520faf/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf9021a960b74107a7e141aa06bc9d8a0a53c929178c2fb95b1597be8af8dc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/db7395f4add94e6d10e515b3e55373f2821f8323de7dc8e314d78feefacf5584/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/dennis/Projects/BlackJackMVC/BlackJackMVC/Controllers/GameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -135,7 +135,7 @@
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
       <workItem from="1753780670011" duration="15974000" />
-      <workItem from="1754060284735" duration="6351000" />
+      <workItem from="1754060284735" duration="10351000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -313,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754062049090</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Added chip images to set up view">
+      <option name="closed" value="true" />
+      <created>1754070296146</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1754070296146</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +353,8 @@
     <MESSAGE value="Added a simple method in the setup service that checks if a wager is valid" />
     <MESSAGE value="Started working on some simple validation for game setup" />
     <MESSAGE value="Added ViewBag into layout to handle individual styling of each view's body" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ViewBag into layout to handle individual styling of each view's body" />
+    <MESSAGE value="Added chip images to set up view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added chip images to set up view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

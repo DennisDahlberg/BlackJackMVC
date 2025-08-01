@@ -6,45 +6,49 @@
 <div class="game-board"></div>
 
 <div class="setup-container">
-    <h2>BLACKJACK</h2>
-    <p>Balance: 1000</p>
-    <p>PLACE YOUR BET</p>
-    <p>Wager  £@Model.BetAmount</p>
-    <form method="post" class="setup-btn-container">
-        <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
-        <div>
-            <button type="submit" 
-                    name="betToAdd"
-                    value="10"
-                    style="border: none; background: none;">
-                <img src="img/chip10.png" alt="submit"/>    
-            </button>
-            <button type="submit" 
-                    name="betToAdd"
-                    value="50"
-                    style="border: none; background: none;">
-                <img src="img/chip50.png" alt="submit"/>    
-            </button>
-            <button type="submit" 
-                    name="betToAdd"
-                    value="100"
-                    style="border: none; background: none;">
-                <img src="img/chip100.png" alt="submit"/>    
-            </button>
+    <h2 class="setup-header">BLACKJACK</h2>
+    <p class="balance-text">Balance: $1000</p>
+    <p class="bet-text">PLACE YOUR BET</p>
+    <div class="setup-secondary-container">
+        <div class="start-game-btn wager">
+            <span>Wager</span>
+            <span class="wager-amount">$@Model.BetAmount</span>
         </div>
+        <form method="post" class="setup-btn-container">
+            <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
+            <div>
+                <button type="submit" 
+                        name="betToAdd"
+                        value="10"
+                        style="border: none; background: none;">
+                    <img src="img/chip10.png" alt="submit"/>    
+                </button>
+                <button type="submit" 
+                        name="betToAdd"
+                        value="50"
+                        style="border: none; background: none;">
+                    <img src="img/chip50.png" alt="submit"/>    
+                </button>
+                <button type="submit" 
+                        name="betToAdd"
+                        value="100"
+                        style="border: none; background: none;">
+                    <img src="img/chip100.png" alt="submit"/>    
+                </button>
+            </div>
         
-        <div>
             <button type="submit"
                     asp-action="StartGame"
-                    class="btn btn-success">
-                Start
-            </button>    
-        </div>
+                    class="start-game-btn">
+                START GAME
+            </button>
         
-    </form>
+        </form>
+    </div>
+    
 </div>
 
 @if (TempData["Result"] != null)
 {
-    <p class="text-danger text-center fs-5">@TempData["Result"]</p>
+    <p class="text-danger text-center fs-5 mt-4">@TempData["Result"]</p>
 }

@@ -9,6 +9,7 @@
 
 * {
     margin: 0;
+    line-height: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -18,7 +19,7 @@
 }
 
 body {
-    line-height: 1.5;
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -244,10 +245,18 @@ body.green-bg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: space-around;*/
-    height: 100vh;
+    margin-top: 1.5em;
+}
+.setup-header {
+    font-size: 6rem;
 }
 .setup-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.setup-secondary-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,7 +266,32 @@ body.green-bg {
     display: flex;
     gap: 1em;
 }
-
+.start-game-btn {
+    border: 5px solid #F2CA65;
+    color: #F2CA65;
+    background-color: #0E321D;
+    padding: .2em 0;
+    font-size: 3rem;
+    border-radius: 15px;
+    width: 100%;
+    font-weight: 500;
+}
+.wager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .2em 1em;
+}
+.wager-amount {
+    color: white;
+}
+.bet-text {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.balance-text {
+    font-size: 2rem;
+}
 
 /*Play game end*/
 
