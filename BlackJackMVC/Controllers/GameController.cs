@@ -48,6 +48,12 @@ public class GameController : Controller
             TempData["Result"] = "Wager is too big!";
             return RedirectToAction("Index");
         }
-        return Content("Success");
+
+        return RedirectToAction("Game");
+    }
+
+    public IActionResult Game()
+    {
+        return View();
     }
 }
