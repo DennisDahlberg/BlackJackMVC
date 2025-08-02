@@ -155,48 +155,28 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 2em;
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
-.home-page-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.home-page h2 {
+    font-size: 6rem;
+    text-align: center;
+}
+.home-page-btn-container {
+    display: flex;
+    justify-content: center;
     gap: 1em;
-    margin-top: 2em;
 }
-.home-page-card {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    color: var(--color-text-dark);
+.home-page-btn-container a {
+    font-size: 2rem;
+    border: 5px solid #F2CA65;
+    padding: 14px 16px;
+    border-radius: 20px;
+    color: #F2CA65;
+    text-decoration: none;
 }
-.home-page-card:hover {
-    cursor: pointer;
-}
-.home-page-card img {
-    width: 100%;
-    height: 100%;
-}
-.home-page-card-title {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-}
-.home-page-card-details {
-    position: absolute;
-    top: 55px;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-}
-.home-page-card:hover .home-page-card-details {
-    opacity: 100;
-}
-.home-page-card:hover img {
-    filter: blur(4px);
-    transition: filter 0.3s;
+.home-page img {
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 
@@ -282,6 +262,34 @@ body.green-bg {
 /*Play game end*/
 
 
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .home-page img {
+        max-width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .home-page {
+        width: 90%;
+    }
+    .home-page img {
+        max-width: 100%;
+    }
+    .home-page h2 {
+        font-size: 4rem;
+    }
+    .home-page-btn-container a {
+        font-size: 1.5rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+}
 
 
 
