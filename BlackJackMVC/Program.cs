@@ -24,6 +24,7 @@ public class Program
         builder.Services.AddControllersWithViews();
 
         builder.Services.AddTransient<SetupService>();
+        builder.Services.AddTransient<CardService>();
         
         var app = builder.Build();
 
