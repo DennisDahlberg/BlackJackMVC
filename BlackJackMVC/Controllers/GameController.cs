@@ -11,12 +11,14 @@ namespace BlackJackMVC.Controllers;
 public class GameController : Controller
 {
     private readonly SetupService _setupService;
+    private readonly CardService _cardService;
     private readonly UserManager<ApplicationUser> _userManager;
 
-    public GameController(SetupService setupService, UserManager<ApplicationUser> userManager)
+    public GameController(SetupService setupService, UserManager<ApplicationUser> userManager, CardService cardService)
     {
         _setupService = setupService;
         _userManager = userManager;
+        _cardService = cardService;
     }
 
     public async Task<IActionResult> Index()
@@ -57,7 +59,20 @@ public class GameController : Controller
         if (betAmount <= 0)
             RedirectToAction("Index");
         ViewBag.BodyClass = "green-bg";
-        var game = new GameViewModel() { BetAmount = betAmount, ComputerPoints = 0, PlayerPoints = 0};
+        var game = new GameViewModel() 
+            { BetAmount = betAmount, 
+                ComputerPoints = 0, 
+                PlayerPoints = 0,
+                Deck = _cardService.CreateDeck()
+            };
+        game.PlayerHand = _cardService.CreateHand(game.Deck);
+        game.HouseHand = _cardService.CreateHand(game.Deck);
+        
         return View(game);
     }
 }
+
+
+
+
+

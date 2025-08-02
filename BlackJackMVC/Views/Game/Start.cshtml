@@ -4,3 +4,11 @@
     ViewData["Title"] = "Game";
 }
 
+@foreach (var card in @Model.PlayerHand)
+{
+    <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+}
+@foreach (var card in @Model.HouseHand)
+{
+    <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+}

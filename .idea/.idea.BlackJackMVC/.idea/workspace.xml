@@ -9,10 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DataAccessLayer/Models/Card.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DataAccessLayer/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ViewModels/GameViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ViewModels/GameViewModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,27 +65,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.BlackJackMVC: http.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;creating__game__logic&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "creating__game__logic",
+    "last_opened_file_path": "/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.BlackJackMVC: http">
     <configuration name="BlackJackMVC: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/BlackJackMVC/BlackJackMVC.csproj" />
@@ -132,7 +134,7 @@
       <workItem from="1750580756644" duration="1204000" />
       <workItem from="1753698958286" duration="4132000" />
       <workItem from="1754133978799" duration="2489000" />
-      <workItem from="1754157779872" duration="1698000" />
+      <workItem from="1754157779872" duration="3472000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -278,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754158443592</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Started working on a card service that will create the deck and deal out the cards to the player and the house">
+      <option name="closed" value="true" />
+      <created>1754159714507</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1754159714507</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +316,8 @@
     <MESSAGE value="Added a game action as well as a game view to handle the start of a game" />
     <MESSAGE value="Added a game view model and fixed routing between the setup action and the start action" />
     <MESSAGE value="Added a card image for all the cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a card image for all the cards" />
+    <MESSAGE value="Started working on a card service that will create the deck and deal out the cards to the player and the house" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on a card service that will create the deck and deal out the cards to the player and the house" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -323,6 +334,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
+          <line>70</line>
+          <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Start'">
+            <startOffsets>
+              <option value="2240" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2258" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

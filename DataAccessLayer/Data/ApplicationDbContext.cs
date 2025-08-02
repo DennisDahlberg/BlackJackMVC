@@ -12,5 +12,4 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     }
     
     public DbSet<Game> Games { get; set; }
-    public DbSet<Card> Cards { get; set; }
 }
