@@ -48,12 +48,16 @@ public class GameController : Controller
             TempData["Result"] = "Wager is too big!";
             return RedirectToAction("Index");
         }
-
-        return RedirectToAction("Game");
+        
+        return RedirectToAction("Start", new {betAmount = bet.BetAmount});
     }
 
-    public IActionResult Game()
+    public IActionResult Start(decimal betAmount)
     {
-        return View();
+        if (betAmount <= 0)
+            RedirectToAction("Index");
+        ViewBag.BodyClass = "green-bg";
+        var game = new GameViewModel() { BetAmount = betAmount, ComputerPoints = 0, PlayerPoints = 0};
+        return View(game);
     }
 }

@@ -9,8 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Game.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/Services/GameService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/ViewModels/GameViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Game.cshtml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754076696483</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Added a game action as well as a game view to handle the start of a game">
+      <option name="closed" value="true" />
+      <created>1754139877540</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1754139877540</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +288,8 @@
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
     <MESSAGE value="Added a simple return button to the rules section" />
     <MESSAGE value="Updated positioning on the rules section" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated positioning on the rules section" />
+    <MESSAGE value="Added a game action as well as a game view to handle the start of a game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a game action as well as a game view to handle the start of a game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
