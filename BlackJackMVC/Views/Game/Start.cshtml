@@ -4,11 +4,34 @@
     ViewData["Title"] = "Game";
 }
 
-@foreach (var card in @Model.PlayerHand)
-{
-    <img src="~/img/cards/@card.ImageUrl" alt="card"/>
-}
-@foreach (var card in @Model.HouseHand)
-{
-    <img src="~/img/cards/@card.ImageUrl" alt="card"/>
-}
+<div class="game-board">
+    <div class="hand">
+        @foreach (var card in @Model.PlayerHand)
+        {
+            <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+        }
+    </div>
+
+    <div class="hand">
+        @foreach (var card in @Model.HouseHand)
+        {
+            <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+        }
+    </div>
+    <div class="game-btn-container">
+        <a>
+            <i class="fa-solid fa-gear"></i>
+        </a>
+        <a>
+            <i class="fa-solid fa-gear"></i>
+        </a>
+    </div>
+</div>
+
+
+
+
+
+
+
+

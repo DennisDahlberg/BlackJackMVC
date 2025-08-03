@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 /*Rules Page End*/
 
 
-/*Play game start*/
+/*Setup start*/
 body.green-bg {
     background-color: #174426;
     color: #F2CA65;
@@ -259,9 +259,42 @@ body.green-bg {
     font-size: 2rem;
 }
 
+/*Setup end*/
+
+
+
+/*Play game start*/
+.game-board {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.hand img {
+    max-width: 10%;
+}
+.game-btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.game-btn-container a {
+    font-size: 2rem;
+    color: white;
+    border: 5px solid #F2CA65;
+    padding: 14px 16px;
+    border-radius: 20px;
+}
+
+
 /*Play game end*/
-
-
 
 
 
