@@ -269,16 +269,33 @@ body.green-bg {
     flex-direction: column;
     gap: 3em;
     justify-content: space-between;
-    margin-top: 3em;
+    height: 100vh;
+    padding: 2em 0;
 }
 .hand {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1em;
+    position: relative;
+    width: 23%;
+    margin: 0 auto;
 }
 .hand img {
-    max-width: 10%;
+    max-width: 50%;
+}
+.hand span {
+    font-size: 2rem;
+    border: 5px solid #F2CA65;
+    border-radius: 50%;
+    padding: 16px;
+    position: absolute;
+}
+.house-score {
+    right: -3em;
+}
+.player-score {
+    left: -3em;
 }
 .game-btn-container {
     display: flex;
@@ -291,6 +308,15 @@ body.green-bg {
     border: 5px solid #F2CA65;
     padding: 14px 16px;
     border-radius: 20px;
+}
+.menu-btn {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    font-size: 2rem;
+}
+.menu-btn:hover {
+    cursor: pointer;
 }
 
 

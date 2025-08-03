@@ -33,16 +33,20 @@
     @*     </div> *@
     @* </nav> *@
     
-    <nav>
-        <div class="topnav" id="myTopnav">
-            <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
-            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <partial name="_LoginPartial"/>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-    </nav>
+    @if (ViewData["Title"] != "Game")
+    {
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="active">Home</a>
+                <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <partial name="_LoginPartial"/>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    }
+    
     
 </header>
 <div class="full-width-wrapper">

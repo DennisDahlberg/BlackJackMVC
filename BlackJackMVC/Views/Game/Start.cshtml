@@ -4,26 +4,32 @@
     ViewData["Title"] = "Game";
 }
 
+<span class="menu-btn">
+    <i class="fa-solid fa-gear"></i>
+</span>
+
 <div class="game-board">
     <div class="hand">
-        @foreach (var card in @Model.PlayerHand)
+        <span class="house-score">@Model.ComputerPoints</span>
+        @foreach (var card in @Model.HouseHand)
         {
             <img src="~/img/cards/@card.ImageUrl" alt="card"/>
         }
     </div>
 
     <div class="hand">
-        @foreach (var card in @Model.HouseHand)
+        <span class="player-score">@Model.PlayerPoints</span>
+        @foreach (var card in @Model.PlayerHand)
         {
             <img src="~/img/cards/@card.ImageUrl" alt="card"/>
         }
     </div>
     <div class="game-btn-container">
         <a>
-            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-plus"></i>
         </a>
         <a>
-            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-hand"></i>
         </a>
     </div>
 </div>
