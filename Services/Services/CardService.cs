@@ -1,4 +1,5 @@
 using DataAccessLayer.Models;
+using Services.ViewModels;
 
 namespace Services.Services;
 
@@ -26,6 +27,40 @@ public class CardService
         }
         return deck;
     }
+    
+    public GameViewModel CreateHands(List<Card> deck)
+    {
+        var model = new GameViewModel();
+        var card1 = DrawCard(deck);
+        var card2 = DrawCard(deck);
+        var card3 = DrawCard(deck);
+        var card4 = DrawCard(deck);
+        
+        var playerHand = new List<Card>
+        {
+            card1.Item2,
+            card2.Item2
+        };
+        var houseHand = new List<Card>
+        {
+            card3.Item2,
+            card4.Item2
+        };
+        model.PlayerHand = playerHand;
+        model.HouseHand = houseHand;
+        return model;
+    }
+
+    public GameViewModel CreateStartingState()
+    {
+        var deck = CreateDeck();
+        var model = CreateHands(deck);
+        model.BetAmount = 0;
+        model.Deck = deck;
+        model.ComputerPoints = CalculateHandPoints(model.HouseHand);
+        model.PlayerPoints = CalculateHandPoints(model.PlayerHand);
+        return model;
+    }
 
 
     public Tuple<List<Card>, Card> DrawCard(List<Card> deck)
@@ -37,17 +72,29 @@ public class CardService
         return new Tuple<List<Card>, Card>(deck, card);
     }
 
-    public List<Card> CreateHand(List<Card> deck)
+    public int CalculateHandPoints(List<Card> deck)
     {
-        var card1 = DrawCard(deck);
-        var card2 = DrawCard(deck);
-        
-        var hand = new List<Card>
+        var totalPoints = 0;
+        foreach (var card in deck)
         {
-            card1.Item2,
-            card2.Item2
-        };
-        return hand;
+            // if (card.Rank == "A")
+            if (card.Rank == "K" ||
+                card.Rank == "Q" ||
+                card.Rank == "J" ||
+                card.Rank == "A")
+            {
+                totalPoints += 10;
+            }
+            else
+            {
+                totalPoints += int.Parse(card.Rank);
+            }
+        }
+        return totalPoints;
     }
+
+    
+    
+   
     
 }

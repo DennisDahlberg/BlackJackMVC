@@ -59,16 +59,9 @@ public class GameController : Controller
         if (betAmount <= 0)
             RedirectToAction("Index");
         ViewBag.BodyClass = "green-bg";
-        var game = new GameViewModel() 
-            { BetAmount = betAmount, 
-                ComputerPoints = 0, 
-                PlayerPoints = 0,
-                Deck = _cardService.CreateDeck()
-            };
-        game.PlayerHand = _cardService.CreateHand(game.Deck);
-        game.HouseHand = _cardService.CreateHand(game.Deck);
+        var model = _cardService.CreateStartingState();
         
-        return View(game);
+        return View(model);
     }
 }
 
