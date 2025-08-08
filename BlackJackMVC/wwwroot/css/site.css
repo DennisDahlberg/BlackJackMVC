@@ -285,10 +285,14 @@ body.green-bg {
     max-width: 50%;
 }
 .hand span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
     border: 5px solid #F2CA65;
     border-radius: 50%;
-    padding: 16px;
+    height: 2em;
+    width: 2em;
     position: absolute;
 }
 .house-score {

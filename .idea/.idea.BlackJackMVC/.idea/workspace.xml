@@ -10,8 +10,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +133,7 @@
       <workItem from="1754133978799" duration="2489000" />
       <workItem from="1754157779872" duration="3472000" />
       <workItem from="1754207444406" duration="6052000" />
-      <workItem from="1754676726809" duration="1467000" />
+      <workItem from="1754676726809" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -304,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754215129309</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Started working on checking the points after starting the game">
+      <option name="closed" value="true" />
+      <created>1754678254033</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1754678254033</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +342,8 @@
     <MESSAGE value="Started working on a card service that will create the deck and deal out the cards to the player and the house" />
     <MESSAGE value="Started working on the game view" />
     <MESSAGE value="Working on the frontend updating scaling of the cards and updated the styling of the hit and stand buttons. Also started working on score indicators for the house and player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on the frontend updating scaling of the cards and updated the styling of the hit and stand buttons. Also started working on score indicators for the house and player" />
+    <MESSAGE value="Started working on checking the points after starting the game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on checking the points after starting the game" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
