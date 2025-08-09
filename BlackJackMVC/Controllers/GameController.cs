@@ -45,8 +45,7 @@ public class GameController : Controller
     public async Task<IActionResult> StartGame(BetViewModel bet)
     {
         var user = await _userManager.GetUserAsync(User);
-        // var result = _setupService.IsBetValid(bet.BetAmount, user.Balance);
-        var result = _setupService.IsBetValid(bet.BetAmount, 1000);
+        var result = _setupService.IsBetValid(bet.BetAmount, user.Balance);
         if (!result)
         {
             TempData["Result"] = "Wager is too big!";
