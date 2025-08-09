@@ -36,6 +36,7 @@ public class Program
 
         builder.Services.AddTransient<SetupService>();
         builder.Services.AddTransient<CardService>();
+        builder.Services.AddTransient<GameService>();
         
         var app = builder.Build();
         

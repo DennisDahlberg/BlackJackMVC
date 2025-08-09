@@ -4,6 +4,18 @@
     ViewData["Title"] = "Game";
 }
 
+@if (TempData["Result"] != null)
+{
+    <div class="result-overlay">
+        <form class="result-container">
+            <span>@TempData["Result"]</span>
+            <button asp-action="Index">
+                PLAY AGAIN
+            </button>
+        </form>
+    </div>
+}
+
 <span class="menu-btn">
     <i class="fa-solid fa-gear"></i>
 </span>

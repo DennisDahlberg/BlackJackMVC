@@ -11,8 +11,11 @@
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Result.cshtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/GameService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +47,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4743f513c7ddc8411223a46f0ca426ed929391acebcff993721dff2f0c6b34/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/db7395f4add94e6d10e515b3e55373f2821f8323de7dc8e314d78feefacf5584/ActionMethodExecutor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/BlackJackMVC/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -137,7 +141,7 @@
       <workItem from="1754157779872" duration="3472000" />
       <workItem from="1754207444406" duration="6052000" />
       <workItem from="1754676726809" duration="3082000" />
-      <workItem from="1754739737326" duration="9064000" />
+      <workItem from="1754739737326" duration="10450000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -347,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754750194105</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Made it so the dealer draw cards after you press stand">
+      <option name="closed" value="true" />
+      <created>1754751467266</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1754751467266</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +369,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fixed postgresql" />
     <MESSAGE value="Added a background image and worked on the navbar" />
     <MESSAGE value="Started working on some basic css foundations with font size and color" />
     <MESSAGE value="Started working on landing page" />
@@ -382,7 +393,8 @@
     <MESSAGE value="Implamented http session to handle the game state between requests and also added a draw card function" />
     <MESSAGE value="Updated the position of the points to be above the cards instead of besides it and added the player and dealer label beside the points" />
     <MESSAGE value="Added a result view" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a result view" />
+    <MESSAGE value="Made it so the dealer draw cards after you press stand" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it so the dealer draw cards after you press stand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -401,13 +413,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>69</line>
+          <line>71</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Draw'">
             <startOffsets>
-              <option value="2115" />
+              <option value="2223" />
             </startOffsets>
             <endOffsets>
-              <option value="2116" />
+              <option value="2224" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
@@ -417,10 +429,10 @@
           <line>89</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Stand'">
             <startOffsets>
-              <option value="2782" />
+              <option value="2832" />
             </startOffsets>
             <endOffsets>
-              <option value="2813" />
+              <option value="2863" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />

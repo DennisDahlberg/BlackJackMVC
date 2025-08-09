@@ -14,12 +14,14 @@ public class GameController : Controller
     private readonly SetupService _setupService;
     private readonly CardService _cardService;
     private readonly UserManager<ApplicationUser> _userManager;
+    private readonly GameService _gameService;
 
-    public GameController(SetupService setupService, UserManager<ApplicationUser> userManager, CardService cardService)
+    public GameController(SetupService setupService, UserManager<ApplicationUser> userManager, CardService cardService, GameService gameService)
     {
         _setupService = setupService;
         _userManager = userManager;
         _cardService = cardService;
+        _gameService = gameService;
     }
 
     public async Task<IActionResult> Index()
@@ -76,10 +78,8 @@ public class GameController : Controller
         model.PlayerPoints = _cardService.CalculateHandPoints(model.PlayerHand);
         HttpContext.Session.SetObject("GameState", model);
         if (model.PlayerPoints >= 22)
-        {
-            TempData["Result"] = "Wow, you lost!";
-            return RedirectToAction("Result");
-        }
+            TempData["Result"] = "Bust!";
+        
         
         return View("Start", model);
     }
@@ -91,18 +91,20 @@ public class GameController : Controller
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
 
         var updatedModel = _cardService.DrawDealerCards(model);
-        
         HttpContext.Session.SetObject("GameState", updatedModel);
-        TempData["Result"] = "Wow, you lost!";
-        return View("Start", model);
+
+        if (_gameService.CheckWin(updatedModel))
+        {
+            TempData["Result"] = "You Win";
+        }
+        else
+        {
+            TempData["Result"] = "You Lose";
+        }
+        return View("Start", updatedModel);
     }
 
-    public IActionResult Result()
-    {
-        ViewBag.BodyClass = "green-bg";
-        var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
-        return View(model);
-    }
+    
 }
 
 
