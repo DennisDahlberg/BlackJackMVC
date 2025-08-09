@@ -2,6 +2,7 @@ using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Services.Extensions;
 using Services.Services;
 using Services.ViewModels;
 
@@ -60,8 +61,22 @@ public class GameController : Controller
             RedirectToAction("Index");
         ViewBag.BodyClass = "green-bg";
         var model = _cardService.CreateStartingState();
-        
+        HttpContext.Session.SetObject("GameState", model);
         return View(model);
+    }
+
+    [HttpPost]
+    public IActionResult Draw()
+    {
+        var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
+        var result = _cardService.DrawCard(model.Deck);
+        model.Deck = result.Item1;
+        model.PlayerHand.Add(result.Item2);
+        model.PlayerPoints = _cardService.CalculateHandPoints(model.PlayerHand);
+        
+        ViewBag.BodyClass = "green-bg";
+        HttpContext.Session.SetObject("GameState", model);
+        return View("Start", model);
     }
 }
 

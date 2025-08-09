@@ -22,11 +22,24 @@ public class Program
         builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = false)
             .AddEntityFrameworkStores<ApplicationDbContext>();
         builder.Services.AddControllersWithViews();
+        
+        
+        //Adding Session
+        builder.Services.AddDistributedMemoryCache();
+        builder.Services.AddSession(options =>
+        {
+            options.IdleTimeout = TimeSpan.FromMinutes(30);
+            options.Cookie.HttpOnly = true;
+            options.Cookie.IsEssential = true;
+        });
+        
 
         builder.Services.AddTransient<SetupService>();
         builder.Services.AddTransient<CardService>();
         
         var app = builder.Build();
+        
+        app.UseSession();
 
         // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())

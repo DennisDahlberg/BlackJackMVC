@@ -301,7 +301,7 @@ body.green-bg {
 .player-score {
     left: -3em;
 }
-.game-btn-container {
+.game-btn-container form{
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -309,6 +309,14 @@ body.green-bg {
 .game-btn-container a {
     font-size: 2rem;
     color: white;
+    border: 5px solid #F2CA65;
+    padding: 14px 16px;
+    border-radius: 20px;
+}
+.game-btn-container button {
+    background-color: transparent;
+    font-size: 2rem;
+    color: #F2CA65;
     border: 5px solid #F2CA65;
     padding: 14px 16px;
     border-radius: 20px;

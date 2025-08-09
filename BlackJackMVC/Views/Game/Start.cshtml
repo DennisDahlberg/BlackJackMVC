@@ -25,12 +25,21 @@
         }
     </div>
     <div class="game-btn-container">
-        <a>
-            <i class="fa-solid fa-plus"></i>
-        </a>
-        <a>
-            <i class="fa-solid fa-hand"></i>
-        </a>
+        <form method="post">
+            <input type="hidden" asp-for="Deck" value="@Model.Deck"/>
+            <input type="hidden" asp-for="PlayerHand" value="@Model.PlayerHand"/>
+            <input type="hidden" asp-for="BetAmount" value="@Model.BetAmount"/>
+            <input type="hidden" asp-for="ComputerPoints" value="@Model.ComputerPoints"/>
+            <input type="hidden" asp-for="HouseHand" value="@Model.HouseHand"/>
+            <input type="hidden" asp-for="PlayerPoints" value="@Model.PlayerPoints"/>
+            
+            <button asp-action="Draw">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-hand"></i>
+            </button>
+        </form>
     </div>
 </div>
 
