@@ -27,7 +27,6 @@ public class GameController : Controller
     public async Task<IActionResult> Index()
     {
         var user = await _userManager.GetUserAsync(User);
-        ViewBag.BodyClass = "green-bg";
         var bet = new BetViewModel() { BetAmount = 0, Balance = user.Balance };
         
         return View(bet);
@@ -36,7 +35,6 @@ public class GameController : Controller
     [HttpPost]
     public IActionResult Index(BetViewModel bet, decimal betToAdd)
     {
-        ViewBag.BodyClass = "green-bg";
         bet.BetAmount += betToAdd;
         return View(bet);
     }
@@ -49,7 +47,6 @@ public class GameController : Controller
         var result = _setupService.IsBetValid(bet.BetAmount, 1000);
         if (!result)
         {
-            ViewBag.BodyClass = "green-bg";
             TempData["Result"] = "Wager is too big!";
             return RedirectToAction("Index");
         }
@@ -61,7 +58,6 @@ public class GameController : Controller
     {
         if (betAmount <= 0)
             RedirectToAction("Index");
-        ViewBag.BodyClass = "green-bg";
         var model = _cardService.CreateStartingState();
         HttpContext.Session.SetObject("GameState", model);
         return View(model);
@@ -70,7 +66,6 @@ public class GameController : Controller
     [HttpPost]
     public IActionResult Draw()
     {
-        ViewBag.BodyClass = "green-bg";
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
         var result = _cardService.DrawCard(model.Deck);
         model.Deck = result.Item1;
@@ -87,7 +82,6 @@ public class GameController : Controller
     [HttpPost]
     public IActionResult Stand()
     {
-        ViewBag.BodyClass = "green-bg";
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
 
         var updatedModel = _cardService.DrawDealerCards(model);
