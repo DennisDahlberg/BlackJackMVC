@@ -52,11 +52,11 @@ public class CardService
         return model;
     }
 
-    public GameViewModel CreateStartingState()
+    public GameViewModel CreateStartingState(decimal betAmount)
     {
         var deck = CreateDeck();
         var model = CreateHands(deck);
-        model.BetAmount = 0;
+        model.BetAmount = betAmount;
         model.Deck = deck;
         model.ComputerPoints = CalculateHandPoints(model.HouseHand);
         model.PlayerPoints = CalculateHandPoints(model.PlayerHand);

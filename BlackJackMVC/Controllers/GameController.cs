@@ -58,14 +58,14 @@ public class GameController : Controller
     public IActionResult Start(decimal betAmount)
     {
         if (betAmount <= 0)
-            RedirectToAction("Index");
-        var model = _cardService.CreateStartingState();
+            return RedirectToAction("Index");
+        var model = _cardService.CreateStartingState(betAmount);
         HttpContext.Session.SetObject("GameState", model);
         return View(model);
     }
 
     [HttpPost]
-    public IActionResult Draw()
+    public async Task<IActionResult> Draw()
     {
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
         var result = _cardService.DrawCard(model.Deck);
@@ -74,14 +74,20 @@ public class GameController : Controller
         model.PlayerPoints = _cardService.CalculateHandPoints(model.PlayerHand);
         HttpContext.Session.SetObject("GameState", model);
         if (model.PlayerPoints >= 22)
+        {
             TempData["Result"] = "Bust!";
+            var gameDTO = model.Adapt<GameDTO>();
+            var user = await _userManager.GetUserAsync(User);
+            await _gameService.Save(gameDTO, user.Id);
+        }
+            
         
         
         return View("Start", model);
     }
 
     [HttpPost]
-    public IActionResult Stand()
+    public async Task<IActionResult> Stand()
     {
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
         var gameDTO = model.Adapt<GameDTO>();
@@ -93,6 +99,11 @@ public class GameController : Controller
             TempData["Result"] = "You Win";
         else
             TempData["Result"] = "You Lose";
+
+        var user = await _userManager.GetUserAsync(User);
+        if (user == null)
+            return RedirectToAction("Index");
+        await _gameService.Save(gameDTO, user.Id);
         
         return View("Start", updatedModel);
     }
