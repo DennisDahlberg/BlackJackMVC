@@ -278,28 +278,37 @@ body.green-bg {
     align-items: center;
     gap: 1em;
     position: relative;
-    width: 23%;
+    width: 20%;
     margin: 0 auto;
+    flex-direction: column;
 }
 .hand img {
     max-width: 50%;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+    margin: 0 auto;
+}
+.score-container {
+    display: flex;
+    gap: .5em;
 }
 .hand span {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.65rem;
+    
+}
+.score {
     border: 5px solid #F2CA65;
     border-radius: 50%;
     height: 2em;
     width: 2em;
-    position: absolute;
-}
-.house-score {
-    right: -3em;
-}
-.player-score {
-    left: -3em;
 }
 .game-btn-container form{
     display: flex;

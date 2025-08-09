@@ -9,14 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/Extensions/SessionExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +136,7 @@
       <workItem from="1754157779872" duration="3472000" />
       <workItem from="1754207444406" duration="6052000" />
       <workItem from="1754676726809" duration="3082000" />
-      <workItem from="1754739737326" duration="4703000" />
+      <workItem from="1754739737326" duration="6271000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -327,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754680384727</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Implamented http session to handle the game state between requests and also added a draw card function">
+      <option name="closed" value="true" />
+      <created>1754746786352</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1754746786352</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +363,8 @@
     <MESSAGE value="Working on the frontend updating scaling of the cards and updated the styling of the hit and stand buttons. Also started working on score indicators for the house and player" />
     <MESSAGE value="Started working on checking the points after starting the game" />
     <MESSAGE value="Updated the score counter to have a fixed width instead of using padding because it caused inconsistent UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the score counter to have a fixed width instead of using padding because it caused inconsistent UI" />
+    <MESSAGE value="Implamented http session to handle the game state between requests and also added a draw card function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implamented http session to handle the game state between requests and also added a draw card function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

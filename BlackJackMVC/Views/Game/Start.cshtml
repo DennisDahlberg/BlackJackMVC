@@ -10,19 +10,29 @@
 
 <div class="game-board">
     <div class="hand">
-        <span class="house-score">@Model.ComputerPoints</span>
-        @foreach (var card in @Model.HouseHand)
-        {
-            <img src="~/img/cards/@card.ImageUrl" alt="card"/>
-        }
+        <div class="score-container">
+            <span class="score">@Model.ComputerPoints</span>
+            <span>DEALER</span>
+        </div>
+        <div class="card-container">
+            @foreach (var card in @Model.HouseHand)
+            {
+                <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+            }
+        </div>
     </div>
 
     <div class="hand">
-        <span class="player-score">@Model.PlayerPoints</span>
-        @foreach (var card in @Model.PlayerHand)
-        {
-            <img src="~/img/cards/@card.ImageUrl" alt="card"/>
-        }
+        <div class="score-container">
+            <span class="score">@Model.PlayerPoints</span>
+            <span>PLAYER</span>
+        </div>
+        <div class="card-container">
+            @foreach (var card in @Model.PlayerHand)
+            {
+                <img src="~/img/cards/@card.ImageUrl" alt="card"/>
+            }    
+        </div>
     </div>
     <div class="game-btn-container">
         <form method="post">
