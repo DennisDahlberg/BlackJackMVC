@@ -9,10 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/DTOs/GameDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/BlackJackMVC.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/BlackJackMVC.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/GameService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754751467266</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Updated the background color to be global instead of using viewbag">
+      <option name="closed" value="true" />
+      <created>1754756694401</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1754756694401</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +376,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added a background image and worked on the navbar" />
     <MESSAGE value="Started working on some basic css foundations with font size and color" />
     <MESSAGE value="Started working on landing page" />
     <MESSAGE value="Updated navbar with better responsiveness" />
@@ -391,7 +400,8 @@
     <MESSAGE value="Updated the position of the points to be above the cards instead of besides it and added the player and dealer label beside the points" />
     <MESSAGE value="Added a result view" />
     <MESSAGE value="Made it so the dealer draw cards after you press stand" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it so the dealer draw cards after you press stand" />
+    <MESSAGE value="Updated the background color to be global instead of using viewbag" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the background color to be global instead of using viewbag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -410,13 +420,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>67</line>
+          <line>69</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Draw'">
             <startOffsets>
-              <option value="2059" />
+              <option value="2095" />
             </startOffsets>
             <endOffsets>
-              <option value="2060" />
+              <option value="2096" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

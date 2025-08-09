@@ -1,7 +1,9 @@
 using DataAccessLayer.Models;
+using Mapster;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Services.DTOs;
 using Services.Extensions;
 using Services.Services;
 using Services.ViewModels;
@@ -83,18 +85,16 @@ public class GameController : Controller
     public IActionResult Stand()
     {
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
-
-        var updatedModel = _cardService.DrawDealerCards(model);
+        var gameDTO = model.Adapt<GameDTO>();
+        var updatedModel = _cardService.DrawDealerCards(gameDTO).Adapt<GameViewModel>();
         HttpContext.Session.SetObject("GameState", updatedModel);
-
-        if (_gameService.CheckWin(updatedModel))
-        {
+        gameDTO = updatedModel.Adapt<GameDTO>();
+        
+        if (_gameService.CheckWin(gameDTO))
             TempData["Result"] = "You Win";
-        }
         else
-        {
             TempData["Result"] = "You Lose";
-        }
+        
         return View("Start", updatedModel);
     }
 

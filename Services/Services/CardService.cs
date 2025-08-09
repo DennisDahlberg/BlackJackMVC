@@ -1,4 +1,5 @@
 using DataAccessLayer.Models;
+using Services.DTOs;
 using Services.ViewModels;
 
 namespace Services.Services;
@@ -93,7 +94,7 @@ public class CardService
         return totalPoints;
     }
 
-    public GameViewModel DrawDealerCards(GameViewModel model)
+    public GameDTO DrawDealerCards(GameDTO model)
     {
         while (true)
         {
