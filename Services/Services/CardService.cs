@@ -93,8 +93,22 @@ public class CardService
         return totalPoints;
     }
 
-    
-    
-   
-    
+    public GameViewModel DrawDealerCards(GameViewModel model)
+    {
+        while (true)
+        {
+            if (model.ComputerPoints < 17 && model.ComputerPoints < model.PlayerPoints)
+            {
+                var card = DrawCard(model.Deck);
+                model.HouseHand.Add(card.Item2);
+                model.Deck = card.Item1;
+                model.ComputerPoints = CalculateHandPoints(model.HouseHand);
+            }
+            else
+                return model;
+        }
+    }
+
+
+
 }

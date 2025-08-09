@@ -84,6 +84,19 @@ public class GameController : Controller
         return View("Start", model);
     }
 
+    [HttpPost]
+    public IActionResult Stand()
+    {
+        ViewBag.BodyClass = "green-bg";
+        var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
+
+        var updatedModel = _cardService.DrawDealerCards(model);
+        
+        HttpContext.Session.SetObject("GameState", updatedModel);
+        TempData["Result"] = "Wow, you lost!";
+        return View("Start", model);
+    }
+
     public IActionResult Result()
     {
         ViewBag.BodyClass = "green-bg";

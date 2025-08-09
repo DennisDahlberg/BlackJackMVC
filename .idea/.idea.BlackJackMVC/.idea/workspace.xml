@@ -9,9 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Result.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +137,7 @@
       <workItem from="1754157779872" duration="3472000" />
       <workItem from="1754207444406" duration="6052000" />
       <workItem from="1754676726809" duration="3082000" />
-      <workItem from="1754739737326" duration="7586000" />
+      <workItem from="1754739737326" duration="9064000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -338,7 +339,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754748805767</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Added a result view">
+      <option name="closed" value="true" />
+      <created>1754750194105</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1754750194105</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +357,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Fixed postgresql" />
     <MESSAGE value="Added a background image and worked on the navbar" />
     <MESSAGE value="Started working on some basic css foundations with font size and color" />
@@ -373,7 +381,8 @@
     <MESSAGE value="Updated the score counter to have a fixed width instead of using padding because it caused inconsistent UI" />
     <MESSAGE value="Implamented http session to handle the game state between requests and also added a draw card function" />
     <MESSAGE value="Updated the position of the points to be above the cards instead of besides it and added the player and dealer label beside the points" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the position of the points to be above the cards instead of besides it and added the player and dealer label beside the points" />
+    <MESSAGE value="Added a result view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a result view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -402,6 +411,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
+          <line>89</line>
+          <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Stand'">
+            <startOffsets>
+              <option value="2782" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2813" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
