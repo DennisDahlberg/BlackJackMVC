@@ -68,15 +68,27 @@ public class GameController : Controller
     [HttpPost]
     public IActionResult Draw()
     {
+        ViewBag.BodyClass = "green-bg";
         var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
         var result = _cardService.DrawCard(model.Deck);
         model.Deck = result.Item1;
         model.PlayerHand.Add(result.Item2);
         model.PlayerPoints = _cardService.CalculateHandPoints(model.PlayerHand);
-        
-        ViewBag.BodyClass = "green-bg";
         HttpContext.Session.SetObject("GameState", model);
+        if (model.PlayerPoints >= 22)
+        {
+            TempData["Result"] = "Wow, you lost!";
+            return RedirectToAction("Result");
+        }
+        
         return View("Start", model);
+    }
+
+    public IActionResult Result()
+    {
+        ViewBag.BodyClass = "green-bg";
+        var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
+        return View(model);
     }
 }
 
