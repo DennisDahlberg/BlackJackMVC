@@ -10,10 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Models/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Models/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services/GameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/GameService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "save__games",
+    "git-widget-placeholder": "hide__dealer__card",
     "last_opened_file_path": "/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -142,6 +140,7 @@
       <workItem from="1754207444406" duration="6052000" />
       <workItem from="1754676726809" duration="3082000" />
       <workItem from="1754739737326" duration="10450000" />
+      <workItem from="1754818960804" duration="3041000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -375,7 +374,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754758118693</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Made it so that every game gets saved to the database after being completed">
+      <option name="closed" value="true" />
+      <created>1754770130558</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1754770130558</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,9 +390,19 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Started working on landing page" />
     <MESSAGE value="Updated navbar with better responsiveness" />
     <MESSAGE value="Added login partial to navbar with the correct styling" />
     <MESSAGE value="Added class libraries for services and the data access layer" />
@@ -410,7 +427,8 @@
     <MESSAGE value="Made it so the dealer draw cards after you press stand" />
     <MESSAGE value="Updated the background color to be global instead of using viewbag" />
     <MESSAGE value="Added a game dto to be used when passing data between the controller and service layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a game dto to be used when passing data between the controller and service layer" />
+    <MESSAGE value="Made it so that every game gets saved to the database after being completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made it so that every game gets saved to the database after being completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -445,10 +463,10 @@
           <line>91</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Stand'">
             <startOffsets>
-              <option value="2817" />
+              <option value="2824" />
             </startOffsets>
             <endOffsets>
-              <option value="2887" />
+              <option value="2894" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />

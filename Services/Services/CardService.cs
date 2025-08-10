@@ -56,9 +56,11 @@ public class CardService
     {
         var deck = CreateDeck();
         var model = CreateHands(deck);
+        model.HouseHand[1].HideCard = model.HouseHand[1].ImageUrl;
+        model.HouseHand[1].ImageUrl = $"blue_back.png";
         model.BetAmount = betAmount;
         model.Deck = deck;
-        model.ComputerPoints = CalculateHandPoints(model.HouseHand);
+        model.ComputerPoints = CalculateHandPoints([model.HouseHand[0]]);
         model.PlayerPoints = CalculateHandPoints(model.PlayerHand);
         return model;
     }
@@ -96,6 +98,8 @@ public class CardService
 
     public GameDTO DrawDealerCards(GameDTO model)
     {
+        model.HouseHand[1].ImageUrl = model.HouseHand[1].HideCard;
+        model.ComputerPoints = CalculateHandPoints(model.HouseHand);
         while (true)
         {
             if (model.ComputerPoints < 17 && model.ComputerPoints < model.PlayerPoints)
