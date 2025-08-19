@@ -9,7 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Home/Index.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -394,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755624084697</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="updated styling on register page">
+      <option name="closed" value="true" />
+      <created>1755624488387</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1755624488387</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +424,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added login partial to navbar with the correct styling" />
     <MESSAGE value="Added class libraries for services and the data access layer" />
     <MESSAGE value="Updated and added missing files from the github repo" />
     <MESSAGE value="Started working on game model" />
@@ -440,7 +448,8 @@
     <MESSAGE value="Added a game dto to be used when passing data between the controller and service layer" />
     <MESSAGE value="Made it so that every game gets saved to the database after being completed" />
     <MESSAGE value="Updated styling on login page match the page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated styling on login page match the page" />
+    <MESSAGE value="updated styling on register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated styling on register page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
