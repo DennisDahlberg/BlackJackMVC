@@ -1,3 +1,4 @@
+using System.Globalization;
 using DataAccessLayer.Models;
 using Mapster;
 using Microsoft.AspNetCore.Authorization;
@@ -29,16 +30,27 @@ public class GameController : Controller
     public async Task<IActionResult> Index()
     {
         var user = await _userManager.GetUserAsync(User);
-        var bet = new BetViewModel() { BetAmount = 0, Balance = user.Balance };
-        
-        return View(bet);
+        if (user == null)
+            return RedirectToAction("Index", "Home");
+        if (TempData["BetAmount"] != null)
+        {
+            var betAmount = Convert.ToDecimal(TempData["BetAmount"]);
+            var bet = new BetViewModel() { BetAmount = betAmount, Balance = user.Balance };
+            return View(bet);
+        }
+        else
+        {
+            var bet = new BetViewModel() { BetAmount = 0, Balance = user.Balance };
+            return View(bet);
+        }
     }
 
     [HttpPost]
     public IActionResult Index(BetViewModel bet, decimal betToAdd)
     {
         bet.BetAmount += betToAdd;
-        return View(bet);
+        TempData["BetAmount"] = bet.BetAmount.ToString();
+        return RedirectToAction("Index");
     }
 
     [HttpPost]

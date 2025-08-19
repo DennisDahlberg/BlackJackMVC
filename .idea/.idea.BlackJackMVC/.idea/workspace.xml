@@ -10,7 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +42,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5479966a38d841c093851111b5a1db4ab0000/15/79d77f9a/Controller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/4743f513c7ddc8411223a46f0ca426ed929391acebcff993721dff2f0c6b34/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/71ea5c4edeff4385acb72ebe8dd9eb825939c97d1f1cb41dc463babd91cf34/ControllerActionInvoker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bf9021a960b74107a7e141aa06bc9d8a0a53c929178c2fb95b1597be8af8dc/ExceptionDispatchInfo.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,11 +69,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Run",
+    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "adding__ace__functionality",
+    "git-widget-placeholder": "refactoring__game__controller",
     "last_opened_file_path": "/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -405,7 +407,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated navbar with better responsiveness" />
     <MESSAGE value="Added login partial to navbar with the correct styling" />
     <MESSAGE value="Added class libraries for services and the data access layer" />
     <MESSAGE value="Updated and added missing files from the github repo" />
@@ -430,7 +431,8 @@
     <MESSAGE value="Updated the background color to be global instead of using viewbag" />
     <MESSAGE value="Added a game dto to be used when passing data between the controller and service layer" />
     <MESSAGE value="Made it so that every game gets saved to the database after being completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it so that every game gets saved to the database after being completed" />
+    <MESSAGE value="Added checking and calculating aces in the draw card method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added checking and calculating aces in the draw card method" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,26 +451,26 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>59</line>
+          <line>71</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Start'">
             <startOffsets>
-              <option value="1764" />
+              <option value="2233" />
             </startOffsets>
             <endOffsets>
-              <option value="1783" />
+              <option value="2252" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>91</line>
+          <line>103</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Stand'">
             <startOffsets>
-              <option value="2824" />
+              <option value="3293" />
             </startOffsets>
             <endOffsets>
-              <option value="2894" />
+              <option value="3363" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
