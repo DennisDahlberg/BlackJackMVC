@@ -9,12 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/Index.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/PersonalData.cshtml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754770130558</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Updated styling on login page match the page">
+      <option name="closed" value="true" />
+      <created>1755624084697</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1755624084697</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,7 +415,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated navbar with better responsiveness" />
     <MESSAGE value="Added login partial to navbar with the correct styling" />
     <MESSAGE value="Added class libraries for services and the data access layer" />
     <MESSAGE value="Updated and added missing files from the github repo" />
@@ -437,7 +439,8 @@
     <MESSAGE value="Updated the background color to be global instead of using viewbag" />
     <MESSAGE value="Added a game dto to be used when passing data between the controller and service layer" />
     <MESSAGE value="Made it so that every game gets saved to the database after being completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made it so that every game gets saved to the database after being completed" />
+    <MESSAGE value="Updated styling on login page match the page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated styling on login page match the page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
