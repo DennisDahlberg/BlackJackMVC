@@ -64,6 +64,50 @@ h1, h2, h3, h4, h5, h6 {
     --font-size-text: 16px;
 }
 
+/*Login + Register*/
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 1200px;
+    margin: 5em auto;
+    border: 8px solid black;
+    padding: 2em;
+    border-radius: 10px;
+}
+.login-container input {
+    width: 100%;
+    padding: .7em;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+.login-container label {
+    color: black;
+}
+.input-container {
+    display: flex;
+}
+.input-icon {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    width: 1.5em;
+}
+.login-button {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .3em;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: #F2CA65;
+    color: white;
+}
+/*Login + Register End*/
+
+
 /*Navbar*/
 .logout-btn {
     float: left;
