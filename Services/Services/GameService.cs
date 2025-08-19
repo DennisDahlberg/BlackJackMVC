@@ -34,6 +34,12 @@ public class GameService
         
         game.Date = DateTime.UtcNow;
         game.WonGame = CheckWin(model);
+        if (game.WonGame)
+            user.Balance += game.BetAmount;
+        else
+        {
+            user.Balance -= game.BetAmount;
+        }
         game.ApplicationUserId = userId;
         game.ApplicationUser = user;
         
