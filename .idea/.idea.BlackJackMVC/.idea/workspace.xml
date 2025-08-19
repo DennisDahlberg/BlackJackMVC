@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataAccessLayer/Models/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/DataAccessLayer/Models/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Services/Services/CardService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/Services/CardService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,11 +67,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Debug",
+    ".NET Launch Settings Profile.BlackJackMVC: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "hide__dealer__card",
+    "git-widget-placeholder": "adding__ace__functionality",
     "last_opened_file_path": "/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -141,6 +140,9 @@
       <workItem from="1754676726809" duration="3082000" />
       <workItem from="1754739737326" duration="10450000" />
       <workItem from="1754818960804" duration="3041000" />
+      <workItem from="1755111712944" duration="1197000" />
+      <workItem from="1755541666302" duration="639000" />
+      <workItem from="1755587368886" duration="761000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

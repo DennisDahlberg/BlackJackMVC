@@ -78,10 +78,16 @@ public class CardService
     public int CalculateHandPoints(List<Card> deck)
     {
         var totalPoints = 0;
+        var aces = 0;
         foreach (var card in deck)
         {
-            // if (card.Rank == "A")
-            if (card.Rank == "K" ||
+            if (card.Rank == "A")
+            {
+                aces++;
+                totalPoints += 11;
+            }
+                
+            else if (card.Rank == "K" ||
                 card.Rank == "Q" ||
                 card.Rank == "J" ||
                 card.Rank == "A")
@@ -92,6 +98,12 @@ public class CardService
             {
                 totalPoints += int.Parse(card.Rank);
             }
+        }
+
+        while (totalPoints > 21 && aces > 0)
+        {
+            totalPoints -= 10;
+            aces--;
         }
         return totalPoints;
     }
