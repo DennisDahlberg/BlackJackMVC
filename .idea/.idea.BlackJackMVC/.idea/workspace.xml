@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -386,7 +385,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754770130558</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Changed the index post to redirect to the get method instead of returning a view">
+      <option name="closed" value="true" />
+      <created>1755590891838</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1755590891838</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +414,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added login partial to navbar with the correct styling" />
     <MESSAGE value="Added class libraries for services and the data access layer" />
     <MESSAGE value="Updated and added missing files from the github repo" />
     <MESSAGE value="Started working on game model" />
@@ -432,7 +438,8 @@
     <MESSAGE value="Added a game dto to be used when passing data between the controller and service layer" />
     <MESSAGE value="Made it so that every game gets saved to the database after being completed" />
     <MESSAGE value="Added checking and calculating aces in the draw card method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added checking and calculating aces in the draw card method" />
+    <MESSAGE value="Changed the index post to redirect to the get method instead of returning a view" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed the index post to redirect to the get method instead of returning a view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -451,26 +458,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>71</line>
-          <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Start'">
-            <startOffsets>
-              <option value="2233" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2252" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs</url>
-          <line>103</line>
+          <line>110</line>
           <properties documentPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" containingFunctionPresentation="Method 'Stand'">
             <startOffsets>
-              <option value="3293" />
+              <option value="3539" />
             </startOffsets>
             <endOffsets>
-              <option value="3363" />
+              <option value="3609" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />

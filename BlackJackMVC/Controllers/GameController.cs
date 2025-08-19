@@ -64,15 +64,16 @@ public class GameController : Controller
             return RedirectToAction("Index");
         }
         
-        return RedirectToAction("Start", new {betAmount = bet.BetAmount});
-    }
-
-    public IActionResult Start(decimal betAmount)
-    {
-        if (betAmount <= 0)
-            return RedirectToAction("Index");
-        var model = _cardService.CreateStartingState(betAmount);
+        var model = _cardService.CreateStartingState(bet.BetAmount);
         HttpContext.Session.SetObject("GameState", model);
+        return RedirectToAction("Start");
+    }
+    
+    public IActionResult Start()
+    {
+        var model = HttpContext.Session.GetObject<GameViewModel>("GameState");
+        if (model == null)
+            return RedirectToAction("Index", "Home");
         return View(model);
     }
 
@@ -92,10 +93,8 @@ public class GameController : Controller
             var user = await _userManager.GetUserAsync(User);
             await _gameService.Save(gameDTO, user.Id);
         }
-            
         
-        
-        return View("Start", model);
+        return RedirectToAction("Start");
     }
 
     [HttpPost]
@@ -117,7 +116,7 @@ public class GameController : Controller
             return RedirectToAction("Index");
         await _gameService.Save(gameDTO, user.Id);
         
-        return View("Start", updatedModel);
+        return RedirectToAction("Start");
     }
 
     
