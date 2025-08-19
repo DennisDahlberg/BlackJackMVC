@@ -32,7 +32,7 @@ public class GameController : Controller
         var user = await _userManager.GetUserAsync(User);
         if (user == null)
             return RedirectToAction("Index", "Home");
-        if (TempData["BetAmount"] != null)
+        if (TempData["BetAmount"] != null)                                                                                                                                                                                                                                                                                                                                                                                                            
         {
             var betAmount = Convert.ToDecimal(TempData["BetAmount"]);
             var bet = new BetViewModel() { BetAmount = betAmount, Balance = user.Balance };
@@ -65,6 +65,7 @@ public class GameController : Controller
         }
         
         var model = _cardService.CreateStartingState(bet.BetAmount);
+        model.Balance = user.Balance;
         HttpContext.Session.SetObject("GameState", model);
         return RedirectToAction("Start");
     }

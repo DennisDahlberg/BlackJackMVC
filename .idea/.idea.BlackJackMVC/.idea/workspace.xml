@@ -8,7 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="" />
+    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ViewModels/GameViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Services/ViewModels/GameViewModel.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +148,7 @@
       <workItem from="1755541666302" duration="639000" />
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
-      <workItem from="1755633631126" duration="307000" />
+      <workItem from="1755633631126" duration="1675000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -409,7 +414,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755633937661</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added the groundwork for adding the bet and total amount into the game view with some simple styling">
+      <option name="closed" value="true" />
+      <created>1755634248300</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1755634248300</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +443,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Updated and added missing files from the github repo" />
     <MESSAGE value="Started working on game model" />
     <MESSAGE value="Fixed and added a application user with added custom properties like balance and games" />
     <MESSAGE value="Removed footer" />
@@ -455,7 +467,8 @@
     <MESSAGE value="Updated styling on login page match the page" />
     <MESSAGE value="updated styling on register page" />
     <MESSAGE value="users balance now changes after a game finishes" />
-    <option name="LAST_COMMIT_MESSAGE" value="users balance now changes after a game finishes" />
+    <MESSAGE value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
