@@ -17,3 +17,8 @@ A code-first MVC web application built with ASP.NET
 ## Database
 
 Uses a local PostgreSQL database configured in `appsettings.json`. Make sure that PostgreSQL is installed and running and can be found [**HERE**](https://www.postgresql.org/download/)
+
+## Future Plans
+
+- History of past games
+- Stat page where you can compare stats to other players
