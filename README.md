@@ -20,5 +20,5 @@ Uses a local PostgreSQL database configured in `appsettings.json`. Make sure tha
 
 ## Future Plans
 
-- History of past games
+- Page for played games
 - Stat page where you can compare stats to other players
