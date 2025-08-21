@@ -10,6 +10,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +74,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;pause__funtionality&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/dennis/Projects/BlackJackMVC/DataAccessLayer/Migrations&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -146,6 +148,7 @@
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
       <workItem from="1755633631126" duration="1675000" />
+      <workItem from="1755764686499" duration="1092000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />

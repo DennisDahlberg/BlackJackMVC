@@ -19,6 +19,14 @@
     </div>
 }
 
+<div class="pause-overlay hide-overlay">
+    <div class="pause-container">
+        <span>Hewlwllw</span>
+        <span>HEjeje</span>
+        <span>eingiwneg</span>
+    </div>
+</div>
+
 <span class="menu-btn">
     <i class="fa-solid fa-gear"></i>
 </span>
@@ -72,6 +80,17 @@
         </form>
     </div>
 </div>
+
+
+
+<script>
+    const pauseBtn = document.querySelector('.menu-btn');
+    const pauseOverlay = document.querySelector('.pause-overlay');
+    
+    pauseBtn.addEventListener('click', () => {
+        pauseOverlay.classList.toggle('hide-overlay');
+    })
+</script>
 
 
 
