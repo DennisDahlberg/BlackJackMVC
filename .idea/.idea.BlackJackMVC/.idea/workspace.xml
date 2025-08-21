@@ -8,7 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="" />
+    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +146,7 @@
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
       <workItem from="1755633631126" duration="1675000" />
-      <workItem from="1755764686499" duration="2968000" />
+      <workItem from="1755764686499" duration="3830000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -434,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755767124151</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Added the continue button functionality with javascript">
+      <option name="closed" value="true" />
+      <created>1755776060594</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1755776060594</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +465,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Removed footer" />
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
     <MESSAGE value="Added a simple return button to the rules section" />
     <MESSAGE value="Updated positioning on the rules section" />
@@ -480,7 +489,8 @@
     <MESSAGE value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
     <MESSAGE value="Added javascript that adds an overlay when you press the pause button" />
     <MESSAGE value="Added some simple styling to the pause container with the same buttons that is used in the result container" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some simple styling to the pause container with the same buttons that is used in the result container" />
+    <MESSAGE value="Added the continue button functionality with javascript" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the continue button functionality with javascript" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

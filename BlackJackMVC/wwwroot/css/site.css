@@ -423,6 +423,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #F2CA65;
     font-size: 4.5rem;
     padding: .1em;
+    text-decoration: none;
 }
 .overlay-btn:hover {
     cursor: pointer;
