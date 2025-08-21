@@ -9,7 +9,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Controllers/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +148,7 @@
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
       <workItem from="1755633631126" duration="1675000" />
-      <workItem from="1755764686499" duration="3830000" />
+      <workItem from="1755764686499" duration="4191000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -444,7 +446,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755776060594</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added routing for the quit game button">
+      <option name="closed" value="true" />
+      <created>1755777076400</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1755777076400</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +475,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
     <MESSAGE value="Added a simple return button to the rules section" />
     <MESSAGE value="Updated positioning on the rules section" />
     <MESSAGE value="Added a game action as well as a game view to handle the start of a game" />
@@ -490,7 +499,8 @@
     <MESSAGE value="Added javascript that adds an overlay when you press the pause button" />
     <MESSAGE value="Added some simple styling to the pause container with the same buttons that is used in the result container" />
     <MESSAGE value="Added the continue button functionality with javascript" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the continue button functionality with javascript" />
+    <MESSAGE value="Added routing for the quit game button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added routing for the quit game button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

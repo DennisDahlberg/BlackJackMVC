@@ -56,6 +56,11 @@ public class GameController : Controller
     [HttpPost]
     public async Task<IActionResult> StartGame(BetViewModel bet)
     {
+        if (bet.BetAmount <= 0)
+        {
+            TempData["Result"] = "You need to enter a wager!";
+            return RedirectToAction("Index");
+        }
         var user = await _userManager.GetUserAsync(User);
         var result = _setupService.IsBetValid(bet.BetAmount, user.Balance);
         if (!result)
