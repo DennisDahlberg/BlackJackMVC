@@ -148,7 +148,7 @@
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
       <workItem from="1755633631126" duration="1675000" />
-      <workItem from="1755764686499" duration="1092000" />
+      <workItem from="1755764686499" duration="2267000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -422,7 +422,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755634248300</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Added javascript that adds an overlay when you press the pause button">
+      <option name="closed" value="true" />
+      <created>1755766135848</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1755766135848</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +451,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Started working on game model" />
     <MESSAGE value="Fixed and added a application user with added custom properties like balance and games" />
     <MESSAGE value="Removed footer" />
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
@@ -468,7 +475,8 @@
     <MESSAGE value="updated styling on register page" />
     <MESSAGE value="users balance now changes after a game finishes" />
     <MESSAGE value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
+    <MESSAGE value="Added javascript that adds an overlay when you press the pause button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added javascript that adds an overlay when you press the pause button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

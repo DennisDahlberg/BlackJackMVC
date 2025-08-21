@@ -9,10 +9,10 @@
     <div class="result-overlay">
         <form class="result-container">
             <span>@TempData["Result"]</span>
-            <button asp-action="Index">
+            <button asp-action="Index" class="overlay-btn">
                 PLAY AGAIN
             </button>
-            <button asp-controller="Home" asp-action="Index">
+            <button asp-controller="Home" asp-action="Index" class="overlay-btn">
                 QUIT
             </button>
         </form>
@@ -21,9 +21,8 @@
 
 <div class="pause-overlay hide-overlay">
     <div class="pause-container">
-        <span>Hewlwllw</span>
-        <span>HEjeje</span>
-        <span>eingiwneg</span>
+        <span class="overlay-btn">CONTINUE</span>
+        <span class="overlay-btn">QUIT</span>
     </div>
 </div>
 
