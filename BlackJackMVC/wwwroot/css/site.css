@@ -402,6 +402,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 5px solid #F2CA65;
     font-size: 5rem;
     padding: 1em;
+    border-radius: 15px;
 }
 .result-container {
     display: flex;        
@@ -422,6 +423,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #F2CA65;
     font-size: 4.5rem;
     padding: .1em;
+}
+.overlay-btn:hover {
+    cursor: pointer;
 }
 .game-info {
     display: flex;

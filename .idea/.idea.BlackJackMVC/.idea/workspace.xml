@@ -8,11 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.BlackJackMVC/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/Views/Game/Start.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/BlackJackMVC/wwwroot/css/site.css" afterDir="false" />
-    </list>
+    <list default="true" id="7b14dc9c-07a4-4d4b-b5ca-b796d1b7c7d8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,7 +144,7 @@
       <workItem from="1755587368886" duration="761000" />
       <workItem from="1755595921223" duration="2136000" />
       <workItem from="1755633631126" duration="1675000" />
-      <workItem from="1755764686499" duration="2267000" />
+      <workItem from="1755764686499" duration="2968000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -430,7 +426,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755766135848</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Added some simple styling to the pause container with the same buttons that is used in the result container">
+      <option name="closed" value="true" />
+      <created>1755767124151</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1755767124151</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +455,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Fixed and added a application user with added custom properties like balance and games" />
     <MESSAGE value="Removed footer" />
     <MESSAGE value="Added a rules section to the home controller with a view with basic styling" />
     <MESSAGE value="Added a simple return button to the rules section" />
@@ -476,7 +479,8 @@
     <MESSAGE value="users balance now changes after a game finishes" />
     <MESSAGE value="added the groundwork for adding the bet and total amount into the game view with some simple styling" />
     <MESSAGE value="Added javascript that adds an overlay when you press the pause button" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added javascript that adds an overlay when you press the pause button" />
+    <MESSAGE value="Added some simple styling to the pause container with the same buttons that is used in the result container" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some simple styling to the pause container with the same buttons that is used in the result container" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

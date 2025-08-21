@@ -21,7 +21,7 @@
 
 <div class="pause-overlay hide-overlay">
     <div class="pause-container">
-        <span class="overlay-btn">CONTINUE</span>
+        <span class="overlay-btn" id="continue-btn">CONTINUE</span>
         <span class="overlay-btn">QUIT</span>
     </div>
 </div>
@@ -84,9 +84,13 @@
 
 <script>
     const pauseBtn = document.querySelector('.menu-btn');
+    const continueBtn = document.querySelector('#continue-btn');
     const pauseOverlay = document.querySelector('.pause-overlay');
     
     pauseBtn.addEventListener('click', () => {
+        pauseOverlay.classList.toggle('hide-overlay');
+    })
+    continueBtn.addEventListener('click', () => {
         pauseOverlay.classList.toggle('hide-overlay');
     })
 </script>
